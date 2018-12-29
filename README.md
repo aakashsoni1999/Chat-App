@@ -1,2 +1,2 @@
 # Chat-App
-Chat-App se chat karo maje karo
+Message karo mast raho.
