@@ -6,6 +6,8 @@ const app=express();
 const server=http.createServer(app);
 const io=socketio(server);
 
+const server_port=process.env.PORT||1234
+
 app.use('/',express.static(__dirname));
 
 io.on('connection',(socket)=>{
@@ -17,4 +19,4 @@ io.on('connection',(socket)=>{
     })
 })
 
-server.listen(1234,()=>{ console.log("Site open on port 1234")});
+server.listen(server_port,()=>{ console.log("Site open on port 1234")});
